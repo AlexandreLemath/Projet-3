@@ -1,5 +1,5 @@
 const galleryDiv = document.querySelector('.gallery');
-
+const Perror = document.getElementById('error')
 fetch('http://localhost:5678/api/works')
   .then(response => {
     if (!response.ok) {
@@ -99,13 +99,12 @@ loginForm.addEventListener('submit', async (event) => {
 
         const data = await response.json();
         const token = data.token; 
-        localStorage.setItem('token', token);
+        sessionStorage.setItem('token', token);
        window.location.href = "./index.html"
-      const login = document.getElementById("login")
-      login.textContent = "logout"
-    } catch (error) {
+        } catch (error) {
         console.error('Erreur de connexion:', error.message);
-        alert('Erreur de connexion: Identifiants incorrects');
-    }
+        Perror.textContent = 'Login ou Mot de passe incorecte';
+
+      }
 });
 
