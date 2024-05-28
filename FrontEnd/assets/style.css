@@ -746,3 +746,13 @@ margin-top: 81px;
 h2 {
     margin: 0; /* Remove default margin to align better with the button */
 }
+.close2 {
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    transform: translate(-149%, -20%);
+}
+
+.close2:hover {
+    color: red;
+}

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categorySelect = document.getElementById('category');
     const submitButton = document.getElementById('submit-button');
     const imageTitle = document.getElementById('image-title');
-
+ const closeButton2 = document.getElementById('close2')
     if (sessionStorage.getItem('token')) {
         loginLogout.textContent = 'logout';
         loginLogout.style.cursor = 'pointer'
@@ -41,7 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton.addEventListener('click', () => {
         closeModal();
     });
-
+    closeButton2.addEventListener('click', () => {
+        closeModal2();
+    });
     function showModal() {
         modal.style.display = 'block';
     }
@@ -49,7 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeModal() {
         modal.style.display = 'none';
     }
-
+function closeModal2() {
+    modale2.style.display
+}
     async function fetchWorks() {
         try {
             const response = await fetch('http://localhost:5678/api/works');
