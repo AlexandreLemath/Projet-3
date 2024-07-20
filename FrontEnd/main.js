@@ -108,8 +108,8 @@ loginForm.addEventListener('submit', async (event) => {
        window.location.href = "./index.html"
         } catch (error) {
         console.error('Erreur de connexion:', error.message);
-        Perror.textContent = 'Login ou Mot de passe incorecte';
-
+        Perror.textContent = 'Login ou mot de passe incorrect';
+      Perror.style.color =  'red' ;  
       }
 });
 

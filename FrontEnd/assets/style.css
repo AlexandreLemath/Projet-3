@@ -474,10 +474,7 @@ margin-top: 81px;
     top: 10px;
     left: 10px;
 }
-.fa-edit:before, .fa-pen-to-square:before{
-background-color: white;
-color: black;
-}
+
 #add-file, #image-preview, #add-form {
     width: 100%;
     display: flex;
@@ -766,4 +763,11 @@ h2 {
 
 .close2:hover {
     color: red;
+}
+#stylo1{
+    color: white;
+    background-color: black;
+}
+#pen-2{
+    
 }

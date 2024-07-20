@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginLogout.addEventListener("click", (e) => {
             e.preventDefault();
             sessionStorage.clear();
-            window.location.reload();
+            window.location.href("./login.html");
         });
         modifier.style.display = "block";
         filters.style.display = 'none';
@@ -82,8 +82,8 @@ function closeModal2() {
             const image = document.createElement('img');
             image.src = work.imageUrl;
             image.alt = work.title;
-            image.style.width = "76.86px";
-            image.style.height = "102.57px";
+            image.style.width = "77px";
+            image.style.height = "103px";
             image.style.borderRadius = "2px";
 
             const deleteIcon = document.createElement('i');
