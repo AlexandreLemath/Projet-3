@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginLogout.addEventListener("click", (e) => {
             e.preventDefault();
             sessionStorage.clear();
-            window.location.href("./login.html");
+            window.location.href  = "./login.html" ;
         });
         modifier.style.display = "block";
         filters.style.display = 'none';
